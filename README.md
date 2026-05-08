@@ -9,6 +9,8 @@ Implementação de uma calculadora de descontos que suporta três políticas:
 - **Sem desconto** — retorna o valor original.
 - **Desconto percentual** — aplica um percentual fixo (ex.: 10%).
 - **Desconto por cupom** — subtrai um valor fixo (ex.: R$ 20,00), nunca resultando em valor negativo.
+  
+O projeto foi desenvolvido no Google Colab. O notebook está organizado de forma que cada ciclo TDD (Red, Green, Refactor) corresponde a um conjunto de células separadas, permitindo executar e observar o resultado de cada etapa de forma independente.
 
 ## Ciclos TDD
 
@@ -17,23 +19,11 @@ O desenvolvimento segue os três ciclos clássicos do TDD:
 ### 🔴 Red
 Testes unitários escritos antes de qualquer implementação. Os testes falham intencionalmente nesta etapa.
 
-```
-git commit -m "red: testes iniciais"
-```
-
 ### 🟢 Green
 Implementação mínima para fazer todos os testes passarem, sem preocupação com elegância ou estrutura.
 
-```
-git commit -m "green: implementação mínima"
-```
-
 ### 🔵 Refactor
 Aplicação do padrão **Strategy** para separar cada política de desconto em sua própria classe, mantendo a interface pública inalterada e todos os testes passando.
-
-```
-git commit -m "refactor: padrão Strategy aplicado"
-```
 
 ## Padrão de Projeto
 
